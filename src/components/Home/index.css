@@ -1,0 +1,6 @@
+.HomePage {
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}

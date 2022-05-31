@@ -1,0 +1,9 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-snap-align: start;
+  transition: all 1s ease;
+}

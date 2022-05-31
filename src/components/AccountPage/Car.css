@@ -1,0 +1,67 @@
+.car {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d0d1d2;
+}
+.car__image > img {
+  object-fit: contain;
+  width: 100rem;
+}
+.car__model {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  margin-top: -18rem;
+}
+.car__actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: -5rem;
+  justify-content: center;
+}
+.car__actions > button {
+  width: 25rem;
+  margin-bottom: 3rem;
+}
+.car__info {
+  max-width: 35rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #393c41;
+}
+.car__info > span {
+  color: #3e6be2;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .car__image > img {
+    width: 80rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .car__image > img {
+    width: 50rem;
+  }
+  .car__model {
+    margin-top: -10rem;
+  }
+  .car__actions {
+    margin-top: 0;
+  }
+  .car__actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .car__image > img {
+    width: 50rem;
+  }
+}

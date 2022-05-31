@@ -1,0 +1,50 @@
+.signup {
+  height: 100vh;
+  padding: 2.5rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  opacity: 0;
+  animation: fadein 1s ease forwards;
+}
+.signup__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 33rem;
+  margin: 0 auto;
+}
+.signup__info h1 {
+  font-weight: 500;
+  font-size: 4rem;
+  margin-left: -1rem;
+  color: #171a20;
+  margin-bottom: 2rem;
+}
+.signup__divider {
+  display: flex;
+  justify-content: center;
+  color: #5c5e62;
+}
+.signup__divider > span {
+  width: 100%;
+  font-size: 1.4rem;
+}
+.signup__divider > span::before,
+.signup__divider > span::after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  margin: 4px 8px;
+  background-color: rgb(226, 227, 227);
+}
+
+@keyframes fadein {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}

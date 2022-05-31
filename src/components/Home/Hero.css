@@ -1,0 +1,159 @@
+.itemText {
+  padding-top: 9rem;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 85%;
+}
+
+.itemText__info > h1 {
+  color: #393c41;
+  font-size: 4rem;
+  font-weight: 500;
+  transform: translateY(20px);
+  animation: moveup 0.7s ease forwards;
+  animation-delay: 1s;
+  margin-bottom: 1rem;
+}
+.itemText__info > h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #5c5d61;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+.itemText__info > h4 > span {
+  border-bottom: 1px solid #5c5d61;
+  cursor: pointer;
+  padding: 0.2rem;
+  transition: all 0.3s ease-out;
+}
+.itemText__info > h4 > span:hover {
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(49, 49, 49);
+  color: #3b3b3b;
+}
+.cta_actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cta_actions .cta__buttons {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 600px) {
+  .cta_actions .cta__buttons {
+    flex-direction: column;
+  }
+}
+.cta_actions .cta__buttons > button {
+  cursor: pointer;
+  border: none;
+  display: block;
+  width: 26rem;
+  padding: 1.2rem 0 1.2rem 0;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: transparent;
+  outline: transparent;
+}
+.button--primary {
+  background-color: #393c41;
+  color: white;
+  opacity: 0;
+  transform: translateX(-5rem);
+  animation: slideInLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+.button--secondary {
+  background-color: white;
+  color: black;
+  opacity: 0;
+  transform: translateX(5rem);
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@media (max-width: 900px) {
+  .itemText {
+    max-width: 70%;
+    height: 70%;
+    padding-top: 20vh;
+  }
+}
+@media (max-width: 600px) {
+  .itemText {
+    max-width: 80%;
+    height: 65%;
+    padding-top: 12rem;
+  }
+  .itemText__info > h1 {
+    margin-bottom: 1rem;
+  }
+  .cta_actions .cta__buttons > button {
+    width: 36rem;
+  }
+  .button--primary {
+    animation: moveup 1s ease forwards;
+    animation-delay: 1s;
+  }
+  .button--secondary {
+    animation: moveup 1s ease forwards;
+    animation-delay: 1s;
+  }
+}
+@media (max-width: 350px) {
+  .itemText {
+    max-width: 80%;
+    height: 75%;
+    padding-top: 20vh;
+  }
+  .cta_actions .cta__buttons > button {
+    width: 30rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveup {
+  0% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateX(0px);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateX(0px);
+  }
+}
